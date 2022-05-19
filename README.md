@@ -18,6 +18,9 @@ There are two types of alarms, the working alarm is set off when the temperature
 
 We have access to a complete year of temperature readings and alarms for each sensor in the warehouse, that can be accesed through an API.
 
+![bases_de_datos](https://user-images.githubusercontent.com/95982833/169180169-fc4f5dbc-36ad-4746-be0b-97ec050a98d3.png)
+
+
 By obtaining the temperature and alarm readings, the following questions will be answered:
 
 1. What is the distribution of the different temperature readings on each area throughout the year, and is there a significant variation?
