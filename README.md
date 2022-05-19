@@ -16,10 +16,15 @@ There are two types of alarms, the working alarm is set off when the temperature
 
 ## Methods
 
-We have access to a complete year of temperature readings and alarms for each sensor in the warehouse, that can be accesed through an API.
+We have access to a complete year of temperature readings and alarms for each sensor in the warehouse, that can be accesed through APIs.
 
 ![bases_de_datos](https://user-images.githubusercontent.com/95982833/169180169-fc4f5dbc-36ad-4746-be0b-97ec050a98d3.png)
 
+We will obtain three databases, one from each API:
+
+ - Measuring_point_API: this contains the information of each sensor (id, name, description, group and area).
+ - Values_API: this contains the temperature reading from each sensor at a given time (measuringPointId, channelName, value, unit, isoValue, isoUnit, timestamp).
+ - Alarms_API: this contains the information when an alarm goes off in a sensor ( measuringPointId, channelName, limitValue, limitViolationValue, limitUnit, isoLimitValue, isoLimitViolationValue, isoUnit, timestamp)
 
 By obtaining the temperature and alarm readings, the following questions will be answered:
 
