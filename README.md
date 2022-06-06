@@ -37,5 +37,5 @@ By obtaining the temperature and alarm readings, the following questions will be
 
 
 
-The whole presentation of the project you can see it here: ![Subzero-Presentation](https://docs.google.com/presentation/d/1UKmtILYxAHpOF0Gc04kEek7a1XgS-ATRQAbTzk2dsT0/edit?usp=sharing)
+The whole presentation of the project you can see it here: [Subzero-Presentation](https://docs.google.com/presentation/d/1UKmtILYxAHpOF0Gc04kEek7a1XgS-ATRQAbTzk2dsT0/edit?usp=sharing)
 
