@@ -34,3 +34,8 @@ By obtaining the temperature and alarm readings, the following questions will be
 2.  Is there a time of the day/week/year with a greater number of alarms going off, and if so, does it have statystical significance?
 3. Is there any correlation between the temperature deviations and the weather conditions (temperature) on the warehouse location?
 4. Can weather conditions be used to predict temperature deviations thorugh the use of machine learning?
+
+
+
+The whole presentation of the project you can see it here: ![Subzero-Presentation](https://docs.google.com/presentation/d/1UKmtILYxAHpOF0Gc04kEek7a1XgS-ATRQAbTzk2dsT0/edit?usp=sharing)
+
