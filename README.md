@@ -20,15 +20,17 @@ We have access to a complete year of temperature readings and alarms for each se
 
 ![bases_de_datos](https://user-images.githubusercontent.com/95982833/169180169-fc4f5dbc-36ad-4746-be0b-97ec050a98d3.png)
 
-We will obtain three databases, one from each API:
+We obtained three databases with historical data from the last year up to this date, which are:
 
- - Measuring_point_API: this contains the information of each sensor (id, name, description, group and area).
- - Values_API: this contains the temperature reading from each sensor at a given time (measuringPointId, channelName, value, unit, isoValue, isoUnit, timestamp).
- - Alarms_API: this contains the information when an alarm goes off in a sensor ( measuringPointId, channelName, limitValue, limitViolationValue, limitUnit, isoLimitValue, isoLimitViolationValue, isoUnit, timestamp)
+ - Measuring_point: this contains the information of each sensor (id, name, description, group and area).
+ - Values: this contains the temperature reading from each sensor at a given time (measuringPointId, channelName, value, unit, isoValue, isoUnit, timestamp).
+ - Alarms: this contains the information when an alarm goes off in a sensor ( measuringPointId, channelName, limitValue, limitViolationValue, limitUnit, isoLimitValue, isoLimitViolationValue, isoUnit, timestamp).
+
+After downloading the data, they are merged into a single CSV and complemented with the historical data for the corresponding dates, obtained through the free tier of the openweather.org API for the corresponding coordinates of the warehouse location.
 
 By obtaining the temperature and alarm readings, the following questions will be answered:
 
 1. What is the distribution of the different temperature readings on each area throughout the year, and is there a significant variation?
 2.  Is there a time of the day/week/year with a greater number of alarms going off, and if so, does it have statystical significance?
 3. Is there any correlation between the temperature deviations and the weather conditions (temperature) on the warehouse location?
-4. Can weather conditions be used to predict temperature deviations?
+4. Can weather conditions be used to predict temperature deviations thorugh the use of machine learning?
