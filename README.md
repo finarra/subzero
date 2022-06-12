@@ -7,6 +7,11 @@ The purpose of this project is to analyse the information provided by sensor dis
 These automated refrigeration cameras need constant monitoring, through temperature sensors, that relay an alarm signal when the temperature inside the chamber deviates from established parameters.
 A deviation from the established temperatures has very important implications, since products can freeze or spoil, resulting in increased product losses and potential sanitary hazards, and also implications in energy consumption and running costs, which impact the final business model.
 
+Different conditions may alter the efficiency of the refrigeration systems, but one of the main factors determining operational efficiency of a refrigerator is the environmental conditions of the physical location, and the solar irradiation received by the warehouse or container.
+
+It is already described and published that maximum solar irradiation of 700 W/m2 may cause surfaces to reach up to 35°C, increasing maximum power consumption of over 7.5 kW/h of a refrigerator.
+(“The effect of solar radiation on the energy consumption of refrigerated container”, Case Studies in Thermal Engineering, Vol 12, 2018, pp 687-695, https://doi.org/10.1016/j.csite.2018.09.005)
+
 Based on the above, an efficient temperature monitoring system is needed, that can summarize the temperature readings and alarm summaries, in order to make the pertinent corrections to the system function, scheduled maintenance and sensor calibrations.
 
 As an addition to an efficient monitoring system, a machine learning model is proposed, to predict temperature alarms, based on weather conditions, which is one of the greatest enviromental factors that have to be taken into account in the refrigeration industry, and which represents a threat to the standard food distribution systems worldwide due to climate change.
@@ -18,8 +23,6 @@ There are two types of alarms, the working alarm is set off when the temperature
 ## Methods
 
 We have access to a complete year of temperature readings and alarms for each sensor in the warehouse, that can be accesed through APIs.
-
-![bases_de_datos](https://user-images.githubusercontent.com/95982833/169180169-fc4f5dbc-36ad-4746-be0b-97ec050a98d3.png)
 
 We obtained three databases with historical data from the last year up to this date, which are:
 
