@@ -79,3 +79,31 @@ AdaBoost:
 
 ![ada_boost_all_data](https://user-images.githubusercontent.com/95982833/172082701-8b33b289-7c74-4753-9751-f5ee4bce0125.png)
 =======
+
+## Dashboard
+
+For the Dashboard we wanted to provide the user with summarized information that he can use as KPI. In the original Dashboard from the Sensor's software they are just provided with the raw data like this: 
+
+For each temperature sensor:
+
+1. Value (date & time)
+2. Alarm (yes or no)
+3. Type of alarm (deficit or exceed)
+
+This data can be presented either in graphs of tables. And the information can be retrieved through API (collection of data in real time) or CSV & PDF (collection of historical data / reports).
+
+We based our DB on one comment we heard from the Warehouse manager "We want to know what to do with that data, I would like to know the number of alarmrs per area or per sensor so we can identify where we can optimize the most and which measures to take into account". 
+
+So we decide to provide the following information in our Viz: 
+
+1. Number of Alarms in the past five months
+2. Number and percentage of alarms types (lower limit & upper limit)
+3. Number of alarms per sensor in descending order.
+4. Graph of each sensor through time, like in the original Sensors' software, but with environmental temperature from the Warehouse location. 
+
+In the point 4 we added this as an hypothesis where we implemented our Machine Learning. Can we predict the alarm detonation (number of alarms) by the environmental temperature?... What we wanted to know here is if there is a high relation with this factor and that the user can study the relation with environmental temperature and sensor temperature fluctuation. 
+
+Here you can take a look at our final DB: [Subzero-Dashboard](https://docs.google.com/presentation/d/1UKmtILYxAHpOF0Gc04kEek7a1XgS-ATRQAbTzk2dsT0/edit?usp=sharing)
+
+As you may saw there are some additional bottons leading to **nowhere**. Due that our time is limited we also wanted to leave this project with an open window to keep building on it. And what is this window? In the future we can make a map integration with all of the Warehouses around Mexico of this Company with summarized information and then they can go to the summary of each warehouse as the one provided in the DB. Our main objective is not just to accomplish the task of providing a user with visualizations, but also to make them aware of the potential that a Data Scientist could have in the develppment of internal projects. 
+
