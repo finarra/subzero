@@ -107,3 +107,11 @@ Here you can take a look at our final DB: [Subzero-Dashboard](https://docs.googl
 
 As you may saw there are some additional bottons leading to **nowhere**. Due that our time is limited we also wanted to leave this project with an open window to keep building on it. And what is this window? In the future we can make a map integration with all of the Warehouses around Mexico of this Company with summarized information and then they can go to the summary of each warehouse as the one provided in the DB. Our main objective is not just to accomplish the task of providing a user with visualizations, but also to make them aware of the potential that a Data Scientist could have in the develppment of internal projects. 
 
+
+# Interesting Stuff of our DB
+
+We also wanted to provide the user with a responsive DB, so it is mobile and PC friendly. We got inspiration from a DB tutorial and use those CSS codes to make it happen. As well we use intersting CDNs like google fonts & incons.
+
+Instead of plotly we found this one attractive *https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"* for more complex charts. 
+
+
