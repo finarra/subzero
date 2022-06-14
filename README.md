@@ -45,6 +45,31 @@ By obtaining the temperature and alarm readings, the following questions will be
 
 The whole presentation of the project you can see it here: [Subzero-Presentation](https://docs.google.com/presentation/d/1UKmtILYxAHpOF0Gc04kEek7a1XgS-ATRQAbTzk2dsT0/edit?usp=sharing)
 
+## Cleaning Data for the project
+
+As been told at the beginning, the managers wanted summarized data! Even more than the one provided by the current system provided by the company that produced the sensors. So the questions where: 
+
+1. How many sensor alarms do we have per location (freezer, cooler, fridge & platform)?
+2. Which sensors tend to have more alarm detonation?
+3. Of those alarms which alarms go under lower limit and which above the upper limit?
+4. Is there a relation with the environment conditions (temperature & humidity) with the rate or tendencies of the alarm detonations? 
+
+We checked what kind of data could we get from the API and if we could make an App out of it. We found it to be complicated because od the time available for the project. Here you can see an example of how the API data looked like while retriving values: 
+
+<img width="285" alt="Captura de Pantalla 2022-06-13 a la(s) 20 04 42" src="https://user-images.githubusercontent.com/84519822/173471975-441ff74e-f1be-4f9e-99a0-d155056824be.png">
+
+
+So we decided to use the historical data in the CSVs provided by the temperature monitoring system that were: 
+
+1. In the **values report** we had the following columns with over 30,000 rows:
+date, hour, a, b, c, d, e, f, g, h, i, j where the letters stand for the name of the sensor and its measure on that that date and hour.
+
+
+2. In the **alarms report** we had the following columns with over 7,000 rows:
+Status, Date, Type, Location, Group of measurement points, Range, Event, Value, Limit, which where all in spanish and pretty dirty and inconsistent data. 
+
+
+
 ## Machine Learining Model
 After obtaining the final database with all the temperature readings from the sensors, and the historical weather data, with the use of supervised machine learning, data was selected to predict a temperature deviation that will result in a sensor alarm activation.
 
@@ -105,7 +130,7 @@ So we decide to provide the following information in our Viz:
 
 In the point 4 we added this as an hypothesis where we implemented our Machine Learning. Can we predict the alarm detonation (number of alarms) by the environmental temperature?... What we wanted to know here is if there is a high relation with this factor and that the user can study the relation with environmental temperature and sensor temperature fluctuation. 
 
-Here you can take a look at our final DB: [Subzero-Dashboard](https://docs.google.com/presentation/d/1UKmtILYxAHpOF0Gc04kEek7a1XgS-ATRQAbTzk2dsT0/edit?usp=sharing)
+Here you can take a look at our final DB: [Subzero-Dashboard](https://finarra.github.io/subzero/)
 
 As you may saw there are some additional bottons leading to **nowhere**. Due that our time is limited we also wanted to leave this project with an open window to keep building on it. And what is this window? In the future we can make a map integration with all of the Warehouses around Mexico of this Company with summarized information and then they can go to the summary of each warehouse as the one provided in the DB. Our main objective is not just to accomplish the task of providing a user with visualizations, but also to make them aware of the potential that a Data Scientist could have in the develppment of internal projects. 
 
