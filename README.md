@@ -4,6 +4,8 @@
 ## Overview
 The purpose of this project is to analyse the information provided by sensor distributed inside an industrial refrigeration warehouse, used to store refrigerated and/or frozen foods.
 
+The food industry requires the use of warehouses with refrigeration and freezing at different temperatures. Strict temperature control must be achieved in order to preserve food and avoid biological risks. The use of automated sensors and monitoring software is a quality standard for this industry.
+
 These automated refrigeration cameras need constant monitoring, through temperature sensors, that relay an alarm signal when the temperature inside the chamber deviates from established parameters.
 A deviation from the established temperatures has very important implications, since products can freeze or spoil, resulting in increased product losses and potential sanitary hazards, and also implications in energy consumption and running costs, which impact the final business model.
 
