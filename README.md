@@ -90,8 +90,6 @@ The final CSV used for our **Machine Learning** & **Dashbord** is the following.
 <img width="759" alt="Captura de Pantalla 2022-06-13 a la(s) 20 12 01" src="https://user-images.githubusercontent.com/84519822/173473020-45b95f84-8842-4706-a77a-fc2aad1e01c3.png">
 
 
-Afterwards we needed to merge in a final csv alarms and values csvs plus the environmental temeperatures across the year of the Warehouse Location. So after merging we also needed to have a column that tells which sensor was the one detonating the alarm this was possible by creating a new column called *sensor_alarm*. This column was created by matching the temperature of the alarm value with one of the ten sensor values. When those two values matched the **value** of the colum took the name of the sensor which was the **name of the column** (freezer_1, freezzer_2, deepfreezer_2, cooler_2 etc).
-
 ## Machine Learining Model
 After obtaining the final database with all the temperature readings from the sensors, and the historical weather data, with the use of supervised machine learning, data was selected to predict a temperature deviation that will result in a sensor alarm activation.
 
