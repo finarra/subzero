@@ -69,6 +69,28 @@ date, hour, a, b, c, d, e, f, g, h, i, j where the letters stand for the name of
 Status, Date, Type, Location, Group of measurement points, Range, Event, Value, Limit, which where all in spanish and pretty dirty and inconsistent data. 
 
 
+This was our final values CSV .head( ) after cleaning
+
+<img width="669" alt="Captura de Pantalla 2022-06-13 a la(s) 20 10 05" src="https://user-images.githubusercontent.com/84519822/173472497-2282caf0-41b6-4f66-9eb2-8381e162d931.png">
+
+
+
+This was our final alarms CSV .head( ) after cleaning
+
+<img width="694" alt="Captura de Pantalla 2022-06-13 a la(s) 20 10 11" src="https://user-images.githubusercontent.com/84519822/173472481-7cac69d3-b91c-4edc-83c6-524a0f98df46.png">
+
+Afterwards we needed to merge in a final csv alarms and values csvs plus the environmental temeperatures across the year of the Warehouse Location. So after merging we also needed to have a column that tells which sensor was the one detonating the alarm this was possible by creating a new column called
+
+<img width="759" alt="Captura de Pantalla 2022-06-13 a la(s) 20 12 01" src="https://user-images.githubusercontent.com/84519822/173472716-1892e2a3-35b3-41cf-9fe3-b78c145d715f.png">
+
+Afterwards we needed to merge in a final csv alarms and values csvs plus the environmental temeperatures across the year of the Warehouse Location. So after merging we also needed to have a column that tells which sensor was the one detonating the alarm this was possible by creating a new column called *sensor_alarm*. This column was created by matching the temperature of the alarm value with one of the ten sensor values. When those two values matched the **value** of the colum took the name of the sensor which was the **name of the column** (freezer_1, freezzer_2, deepfreezer_2, cooler_2 etc).
+
+The final CSV used for our **Machine Learning** & **Dashbord** is the following. Here you can see the first part of it.
+
+<img width="759" alt="Captura de Pantalla 2022-06-13 a la(s) 20 12 01" src="https://user-images.githubusercontent.com/84519822/173473020-45b95f84-8842-4706-a77a-fc2aad1e01c3.png">
+
+
+Afterwards we needed to merge in a final csv alarms and values csvs plus the environmental temeperatures across the year of the Warehouse Location. So after merging we also needed to have a column that tells which sensor was the one detonating the alarm this was possible by creating a new column called *sensor_alarm*. This column was created by matching the temperature of the alarm value with one of the ten sensor values. When those two values matched the **value** of the colum took the name of the sensor which was the **name of the column** (freezer_1, freezzer_2, deepfreezer_2, cooler_2 etc).
 
 ## Machine Learining Model
 After obtaining the final database with all the temperature readings from the sensors, and the historical weather data, with the use of supervised machine learning, data was selected to predict a temperature deviation that will result in a sensor alarm activation.
